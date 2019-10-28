@@ -15,7 +15,6 @@ public class QuestionDao {
     private EntityManager entityManager;
 
     public QuestionEntity createQuestion(QuestionEntity questionEntity) {
-        System.out.println("UserDao..." + questionEntity);
         entityManager.persist(questionEntity);
         try {
             return questionEntity;
